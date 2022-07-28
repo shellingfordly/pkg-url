@@ -1,12 +1,8 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "PKG-URL",
+  "description": "Get url of the github project's package.",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["activeTab", "storage"],
-  "background": {
-    "service_worker": "background.js"
-  },
   "content_scripts": [
     {
       "matches": ["https://github.com/*/*"],
@@ -14,18 +10,12 @@
     }
   ],
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "/imgs/logo.svg",
-      "32": "/imgs/logo.svg",
-      "48": "/imgs/logo.svg",
-      "128": "/imgs/logo.svg"
-    }
+    "default_popup": "popup.html"
   },
   "icons": {
-    "16": "/imgs/logo.svg",
-    "32": "/imgs/logo.svg",
-    "48": "/imgs/logo.svg",
-    "128": "/imgs/logo.svg"
+    "16": "/imgs/logo.png",
+    "32": "/imgs/logo.png",
+    "48": "/imgs/logo.png",
+    "128": "/imgs/logo.png"
   }
 }
